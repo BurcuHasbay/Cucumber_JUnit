@@ -24,7 +24,7 @@ public class LoginStepDefinitions {
 
     @When("user enters student username")
     public void user_enters_student_username() {
-
+        System.out.println("user enters student username");
 
     }
     @When("user enters student password")
@@ -35,7 +35,7 @@ public class LoginStepDefinitions {
 
     @When("user enters admin username")
     public void user_enters_admin_username() {
-
+        System.out.println("user enters admin username");
 
     }
     @When("user enters admin password")
