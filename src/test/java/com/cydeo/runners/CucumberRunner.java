@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = "html:target/cucumber-reports.html",
         features = "/Users/burcuhasbay/IdeaProjects/Cucumber_JUnit/src/test/resources/features",
         glue = "com/cydeo/stepDefinitions",
         dryRun = false,
