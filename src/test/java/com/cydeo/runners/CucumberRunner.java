@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "/Users/burcuhasbay/IdeaProjects/Cucumber_JUnit/src/test/resources/features",
         glue = "com/cydeo/stepDefinitions",
-        dryRun = true
+        dryRun = false,
+        tags = "@Regression"
 )
 public class CucumberRunner {
 }
