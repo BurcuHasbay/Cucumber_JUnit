@@ -16,7 +16,7 @@ public class Hooks {
     @Before
     public void setUpMethod(){
 
-
+        System.out.println("=====Setting Up Browser Using Cucumber @Before");
 
 
 
