@@ -1,6 +1,7 @@
 package com.cydeo.stepDefinitions;
 
 
+import org.junit.After;
 import org.junit.Before;
 
 import java.beans.BeanProperty;
@@ -20,4 +21,13 @@ public class Hooks {
 
 
     }
+
+    @After
+    public void tearDownScenario(){
+        System.out.println("====Closing Browser Using Cucumber @After");
+
+
+    }
+
+
 }
