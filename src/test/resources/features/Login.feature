@@ -6,6 +6,8 @@ Feature: Library app login feature
 
   Accounts are: librarian, student, admin
 
+  Background: For the scenarios in the feature file, user is expected to be on login page
+
   @Librarian @employee @wip
   Scenario Outline: Login as Librarian
     Given user is on the library login page
