@@ -25,6 +25,7 @@ public class Hooks {
     @After
     public void tearDownScenario(){
         System.out.println("====Closing Browser Using Cucumber @After");
+        System.out.println("==== Scenario is ended.Take SS if it failed.");
 
 
     }
