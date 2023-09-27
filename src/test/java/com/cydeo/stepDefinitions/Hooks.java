@@ -1,10 +1,10 @@
 package com.cydeo.stepDefinitions;
 
 
+import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
-import org.junit.After;
-import org.junit.Before;
 
 import java.beans.BeanProperty;
 
@@ -16,7 +16,7 @@ In this class, we will be able to pass pre- & post-conditions to each scenario a
 Import from io.cucumber.java not from JUNIT
  */
 public class Hooks {
-    @Before
+   @Before
     public void setUpMethod(){
 
         System.out.println("=====Setting Up Browser Using Cucumber @Before");
@@ -24,7 +24,7 @@ public class Hooks {
 
     }
 
-    @After
+ @After
     public void tearDownScenario(){
         System.out.println("====Closing Browser Using Cucumber @After");
         System.out.println("==== Scenario is ended.Take SS if it failed.");
