@@ -48,4 +48,9 @@ public class LoginStepDefinitions {
     @Given("user is on the library login page")
     public void userIsOnTheLibraryLoginPage() {
     }
+
+
+    @Given("user is on the library login pag")
+    public void userIsOnTheLibraryLoginPag() {
+    }
 }
