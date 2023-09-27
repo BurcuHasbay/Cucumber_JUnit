@@ -1,6 +1,7 @@
 package com.cydeo.stepDefinitions;
 
 
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.BeforeStep;
 import org.junit.After;
 import org.junit.Before;
@@ -34,10 +35,14 @@ public class Hooks {
 
     @BeforeStep
     public void setUpStep(){
-        System.out.println("-----------appliying setup using @BeforeStep");
+        System.out.println("-----------applying setup using @BeforeStep");
 
     }
 
+    @AfterStep
+    public void afterStep(){
+        System.out.println("-------------applying teardown using @AfterStep ");
+    }
 
 
 
