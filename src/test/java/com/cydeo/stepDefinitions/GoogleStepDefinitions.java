@@ -19,4 +19,13 @@ public class GoogleStepDefinitions {
         Assert.assertEquals(actualTitle,expectedTitle
         );
     }
+
+    @When("user types apple and clicks enter")
+    public void userTypesAppleAndClicksEnter() {
+        
+    }
+
+    @Then("user sees apple in the google title")
+    public void userSeesAppleInTheGoogleTitle() {
+    }
 }
