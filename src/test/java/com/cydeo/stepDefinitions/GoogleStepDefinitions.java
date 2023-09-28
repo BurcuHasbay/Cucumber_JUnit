@@ -34,7 +34,8 @@ public class GoogleStepDefinitions {
 
     @Then("user sees apple in the google title")
     public void userSeesAppleInTheGoogleTitle() {
-    String expectedTitle
+    String expectedTitle = "apple - Google Search";
+    String actualTitle = Driver.getDriver().getTitle();
 
     }
 }
