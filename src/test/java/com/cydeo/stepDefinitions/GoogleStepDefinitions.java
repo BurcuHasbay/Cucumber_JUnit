@@ -8,6 +8,13 @@ import org.junit.Assert;
 import java.lang.ref.SoftReference;
 
 public class GoogleStepDefinitions {
+
+    //WANT TO CREATE POM IN THE CLASS LEVEL
+    //WHY?
+    //
+    GoogleStepDefinitions googleStepDefinitions = new GoogleStepDefinitions();
+
+
     @When("user is on Google search page")
     public void user_is_on_google_search_page() {
         Driver.getDriver().get("https://www.google.com");
