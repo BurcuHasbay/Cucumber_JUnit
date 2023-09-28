@@ -1,5 +1,6 @@
 package com.cydeo.stepDefinitions;
 
+import com.cydeo.pages.GoogleSearchPage;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,7 +13,7 @@ public class GoogleStepDefinitions {
     //WANT TO CREATE POM IN THE CLASS LEVEL
     //WHY?
     //
-    GoogleStepDefinitions googleStepDefinitions = new GoogleStepDefinitions();
+    GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
 
     @When("user is on Google search page")
