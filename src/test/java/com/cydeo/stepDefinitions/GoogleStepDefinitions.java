@@ -34,7 +34,7 @@ public class GoogleStepDefinitions {
 
     @Then("user sees apple in the google title")
     public void userSeesAppleInTheGoogleTitle() {
-    String expectedTitle = "apple - Google Search";
+    String expectedTitle = "apple - Google'da Ara";
     String actualTitle = Driver.getDriver().getTitle();
 
     //Junit Assertion accepts first argument as expected, second one as actual
