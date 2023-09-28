@@ -37,8 +37,8 @@ public class GoogleStepDefinitions {
     String expectedTitle = "apple - Google Search";
     String actualTitle = Driver.getDriver().getTitle();
 
-    //First is always actual in JUNIT
-    Assert.assertEquals(actualTitle,expectedTitle);
+    //Junit Assertion accepts first argument as expected, second one as actual
+    Assert.assertEquals("Title is not as expected!",expectedTitle,actualTitle);
 
     }
 }
