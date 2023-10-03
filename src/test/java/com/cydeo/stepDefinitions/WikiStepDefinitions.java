@@ -1,11 +1,15 @@
 package com.cydeo.stepDefinitions;
 
+import com.cydeo.pages.WikiSearchPage;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class WikiStepDefinitions {
+
+    //creating Object
+    WikiSearchPage wikiSearchPage = new WikiSearchPage();
 
     @Given("User is on Wikipedia home page")
     public void user_is_on_wikipedia_home_page() {
