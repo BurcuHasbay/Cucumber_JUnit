@@ -17,13 +17,11 @@ public class WikiStepDefinitions {
     }
     @When("User types {string} in the wiki search box")
     public void user_types_in_the_wiki_search_box(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        wikiSearchPage.searchBox.sendKeys(string);
     }
     @When("User clicks wiki search button")
     public void user_clicks_wiki_search_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        wikiSearchPage.searchButton.click();
     }
 
     @Then("User sees {string} is in the wiki title")
