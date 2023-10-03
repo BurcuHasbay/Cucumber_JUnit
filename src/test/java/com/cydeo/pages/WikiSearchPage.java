@@ -11,6 +11,9 @@ public class WikiSearchPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    //creating Object
+    WikiSearchPage wikiSearchPage = new WikiSearchPage();
+
     @FindBy(id = "searchInput")
     public WebElement searchBox;
 
