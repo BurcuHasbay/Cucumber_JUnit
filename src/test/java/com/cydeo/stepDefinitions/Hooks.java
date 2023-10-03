@@ -27,7 +27,7 @@ public class Hooks {
  @After
     public void tearDownScenario(Scenario scenario){
 
-       //If scenario fails this method will return TRUE boolean value
+     //If scenario fails this method will return TRUE boolean value
      //If scenario doesn't fail, DO NOT TAKE SS
 
        if (scenario.isFailed()){
