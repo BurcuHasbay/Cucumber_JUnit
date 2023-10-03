@@ -31,4 +31,13 @@ public class WikiStepDefinitions {
         //(Coming from feature file)
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string ));
     }
+
+    @When("User types Steve Jobs in the wiki search box")
+    public void userTypesSteveJobsInTheWikiSearchBox() {
+        
+    }
+
+    @Then("User sees Steve Jobs is in the wiki title")
+    public void userSeesSteveJobsIsInTheWikiTitle() {
+    }
 }
