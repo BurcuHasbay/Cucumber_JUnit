@@ -2,9 +2,11 @@ package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.WikiSearchPage;
 import com.cydeo.utilities.Driver;
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class WikiStepDefinitions {
 
@@ -25,6 +27,7 @@ public class WikiStepDefinitions {
     }
 
     @Then("User sees {string} is in the wiki title")
-    public void userSeesIsInTheWikiTitle(String arg0) {
+    public void userSeesIsInTheWikiTitle(String string) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string ));
     }
 }
