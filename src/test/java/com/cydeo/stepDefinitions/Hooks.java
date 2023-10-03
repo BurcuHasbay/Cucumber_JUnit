@@ -28,11 +28,15 @@ public class Hooks {
     public void tearDownScenario(Scenario scenario){
 
 
-       byte[]screenshot = ((TakesScreenshot)Driver.getDriver())
-               .getScreenshotAs(OutputType.BYTES);
+       if (scenario.isFailed()){
+           byte[]screenshot = ((TakesScreenshot)Driver.getDriver())
+                   .getScreenshotAs(OutputType.BYTES);
 
-     //Keeping track of currently executed scenario
-     scenario.attach(screenshot,"image/png",scenario.getName());
+           //Keeping track of currently executed scenario
+           scenario.attach(screenshot,"image/png",scenario.getName());
+       }
+
+
 
      Driver.closeDriver();
 
