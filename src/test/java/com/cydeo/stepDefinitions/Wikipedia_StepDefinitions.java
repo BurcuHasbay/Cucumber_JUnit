@@ -5,6 +5,7 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 import java.sql.DriverPropertyInfo;
 
@@ -26,7 +27,7 @@ WikipediaPage wikipediaPage = new WikipediaPage();
     }
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
-
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
     }
 
 
