@@ -6,7 +6,7 @@ Feature: Wikipedia search functionality and verification
     When User clicks wiki search button
     Then User sees "Bill Gates" is in the wiki title
 
-    Scenario: Wikipedia Search Functionality Header Verification
+  Scenario: Wikipedia Search Functionality Header Verification
     Given User is on Wikipedia home page
     When User types "Steve Jobs" in the wiki search box
     And User clicks wiki search button
@@ -21,5 +21,10 @@ Feature: Wikipedia search functionality and verification
     Then User sees "<expectedNameHeader>" is in the main header
 
     Examples: search values we are going to be using in this scenario below
-    |searchValue||expectedTitle||expectedNameHeader|
+      | searchValue   | expectedTitle    | expectedNameHeader |
+      | Gigi Hadid    | Beyonce          | Diana          |
+      | Anne Boleyn   | Hürrem Sultan    | Ferzan Özpetek |
+      | Nil Peri      | Gülşen Bubikoğlu | Jun Ji-hyun    |
+      | Emma Watson   | Gal Gadot        | Matt Smith     |
+      | Alex De Souza | Anya Taylor-Joy  | Mert Alaş      |
 
