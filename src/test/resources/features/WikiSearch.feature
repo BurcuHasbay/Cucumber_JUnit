@@ -12,7 +12,7 @@ Feature: Wikipedia search functionality and verification
     And User clicks wiki search button
     Then User sees "Steve Jobs" is in the main header
 
-
+@ScenarioOutline
   Scenario Outline: Wikipedia Search for Functionality and Title Verification
     Given User is on Wikipedia home page
     When User types "<searchValue>" in the wiki search box
