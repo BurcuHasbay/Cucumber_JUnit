@@ -37,4 +37,4 @@ WikipediaPage wikipediaPage = new WikipediaPage();
         Assert.assertTrue(wikipediaPage.mainHeader.isDisplayed());
         Assert.assertEquals("Steve Jobs", wikipediaPage.mainHeader.getText());
     }
-}
+    }
