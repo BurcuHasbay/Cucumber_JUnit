@@ -22,7 +22,7 @@ WikipediaPage wikipediaPage = new WikipediaPage();
     }
     @When("User clicks wiki search button")
     public void user_clicks_wiki_search_button() {
-
+        wikipediaPage.searchButton.click();
     }
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
