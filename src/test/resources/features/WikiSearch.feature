@@ -21,3 +21,5 @@ Feature: Wikipedia search functionality and verification
     Then User sees "<expectedNameHeader>" is in the main header
 
     Examples: search values we are going to be using in this scenario below
+    |searchValue||expectedTitle||expectedNameHeader|
+
