@@ -37,4 +37,11 @@ WikipediaPage wikipediaPage = new WikipediaPage();
         Assert.assertTrue(wikipediaPage.mainHeader.isDisplayed());
         Assert.assertEquals("Steve Jobs", wikipediaPage.mainHeader.getText());
     }
+
+    @Then("User sees {string} is in the main header")
+    public void userSeesIsInTheMainHeader(String string) {
+
+        Assert.assertTrue(wikipediaPage.mainHeader.isDisplayed());
+        Assert.assertEquals(string, wikipediaPage.mainHeader.getText());
     }
+}
