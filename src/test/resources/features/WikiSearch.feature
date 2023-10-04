@@ -22,7 +22,7 @@ Feature: Wikipedia search functionality and verification
 
     Examples: search values we are going to be using in this scenario below
       | searchValue   | expectedTitle    | expectedNameHeader |
-      | Gigi Hadid    | Beyonce          | Diana          |
+      | Eda Erdem     | Beyonce          | Diana          |
       | Anne Boleyn   | Hürrem Sultan    | Ferzan Özpetek |
       | Nil Peri      | Gülşen Bubikoğlu | Jun Ji-hyun    |
       | Emma Watson   | Gal Gadot        | Matt Smith     |
