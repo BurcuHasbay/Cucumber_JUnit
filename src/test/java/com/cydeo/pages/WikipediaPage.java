@@ -25,4 +25,8 @@ public class WikipediaPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement searchButton;
 
+
+    @FindBy(id = "firstHeading")
+    public WebElement mainHeader;
+
 }
