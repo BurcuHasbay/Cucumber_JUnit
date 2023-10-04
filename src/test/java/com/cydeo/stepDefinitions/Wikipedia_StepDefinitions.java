@@ -34,6 +34,6 @@ WikipediaPage wikipediaPage = new WikipediaPage();
     @Then("User sees Steve Jobs is in the main header")
     public void userSeesSteveJobsIsInTheMainHeader() {
 
-        Assert.assertTrue(wikipediaPage.);
+        Assert.assertTrue(wikipediaPage.mainHeader.isDisplayed());
     }
 }
