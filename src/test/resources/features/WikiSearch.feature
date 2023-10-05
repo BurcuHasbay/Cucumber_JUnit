@@ -23,7 +23,7 @@ Feature: Wikipedia search functionality and verification
       | searchValue    | expectedTitle  | expectedNameHeader |
       | Eda Erdem      | Eda Erdem      | Eda Erdem          |
       | Anne Boleyn    | Anne Boleyn    | Anne Boleyn        |
-      | Roxelana       | Roxelana       | Roxelana
+      | Roxelana       | Roxelana       | Roxelana           |
       | Matt Smith     | Matt Smith     | Matt Smith         |
       | Alex De Souza  | Alex De Souza  | Alex De Souza      |
       | Jun Ji-hyun    | Jun Ji-hyun    | Jun Ji-hyun        |
