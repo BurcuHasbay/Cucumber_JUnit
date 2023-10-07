@@ -60,7 +60,6 @@ In this class, only general utility methods that are not related to some specifi
 
     /**
      * This method will verify if the current URL contains expected value.
-     * @param expectedInURL
      */
 
     public static void verifyURLContains(String expectedInURL){
