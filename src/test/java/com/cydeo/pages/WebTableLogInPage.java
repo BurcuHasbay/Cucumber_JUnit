@@ -45,4 +45,8 @@ public WebTableLogInPage(){
         this.logInButton.click();
     }
 
+    public void loginWithConfig(){
+        inputUsername.sendKeys();
+    }
+
 }
