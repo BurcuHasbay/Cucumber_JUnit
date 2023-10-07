@@ -58,6 +58,11 @@ In this class, only general utility methods that are not related to some specifi
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
     }
 
+    /**
+     * This method will verify if the current URL contains expected value.
+     * @param expectedInURL
+     */
+
     public static void verifyURLContains(String expectedInURL){
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInURL));
 
