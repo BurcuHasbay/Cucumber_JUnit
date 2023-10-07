@@ -49,6 +49,7 @@ public WebTableLogInPage(){
     public void loginWithConfig(){
         inputUsername.sendKeys(ConfigurationReader.getProperty("webTable.username"));
         inputPassword.sendKeys(ConfigurationReader.getProperty("webTable.password"));
+        logInButton.click();
     }
 
 }
