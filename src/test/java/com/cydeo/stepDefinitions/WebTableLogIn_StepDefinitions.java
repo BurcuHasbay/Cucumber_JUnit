@@ -1,6 +1,7 @@
 package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.WebTableLogInPage;
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -25,7 +26,7 @@ public class WebTableLogIn_StepDefinitions {
     }
     @Then("User should see url contains orders")
     public void user_should_see_url_contains_orders() {
-
+        BrowserUtils.verifyURLContains("orders");
     }
 
     @When("User enters username {string}")
