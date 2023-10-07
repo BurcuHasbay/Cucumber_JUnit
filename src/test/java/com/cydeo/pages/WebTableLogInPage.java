@@ -1,5 +1,6 @@
 package com.cydeo.pages;
 
+import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,7 +47,8 @@ public WebTableLogInPage(){
     }
 
     public void loginWithConfig(){
-        inputUsername.sendKeys();
+        inputUsername.sendKeys(ConfigurationReader.getProperty("webTable.username"));
+        inputPassword.sendKeys(ConfigurationReader.getProperty("webTable.password"));
     }
 
 }
