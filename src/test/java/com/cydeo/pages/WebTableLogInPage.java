@@ -33,5 +33,16 @@ public WebTableLogInPage(){
     this.logInButton.click();
 }
 
+    /**
+     * This method will accept two arguments and login
+     * @param username
+     * @param password
+     */
+
+    public void login(String username, String password){
+        this.inputUsername.sendKeys(username);
+        this.inputPassword.sendKeys(password);
+        this.logInButton.click();
+    }
 
 }
