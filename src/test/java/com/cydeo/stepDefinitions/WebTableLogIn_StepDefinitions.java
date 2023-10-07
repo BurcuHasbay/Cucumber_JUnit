@@ -34,7 +34,7 @@ public class WebTableLogIn_StepDefinitions {
     }
     @When("User enters password {string}")
     public void user_enters_password(String string) {
-
+    webTableLogInPage.inputPassword.sendKeys(string);
     }
 
 
