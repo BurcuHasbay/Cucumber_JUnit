@@ -20,4 +20,16 @@ public WebTableLogInPage(){
 
 @FindBy(xpath = "//button[.='Login']")
     public WebElement logInButton;
+
+    /**
+     * No paramaters.
+     * When we call this method, it will directly log in using
+     * Username: Test
+     * Password: Tester
+     */
+    public void login(){
+
+}
+
+
 }
