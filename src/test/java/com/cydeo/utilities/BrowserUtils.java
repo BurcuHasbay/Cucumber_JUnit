@@ -57,4 +57,9 @@ In this class, only general utility methods that are not related to some specifi
     public static void verifyTitle(String expectedTitle){
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
     }
+
+    public static void verifyURLContains(String expectedInTitle){
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInTitle));
+
+    }
 }
