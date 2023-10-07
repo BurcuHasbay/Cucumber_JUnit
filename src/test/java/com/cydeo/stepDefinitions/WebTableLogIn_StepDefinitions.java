@@ -21,7 +21,7 @@ public class WebTableLogIn_StepDefinitions {
 
     @When("User clicks to login")
     public void user_clicks_to_login() {
-
+    webTableLogInPage.logInButton.click();
     }
     @Then("User should see url contains orders")
     public void user_should_see_url_contains_orders() {
