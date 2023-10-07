@@ -58,8 +58,8 @@ In this class, only general utility methods that are not related to some specifi
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
     }
 
-    public static void verifyURLContains(String expectedInTitle){
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInTitle));
+    public static void verifyURLContains(String expectedInURL){
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInURL));
 
     }
 }
