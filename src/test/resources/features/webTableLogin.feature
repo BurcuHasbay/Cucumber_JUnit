@@ -1,6 +1,6 @@
 Feature: User should be able to login using correct credential
 
-@wip
+   @wip
   Scenario: Positive login scenario
     Given User is on the login page of web table app
     When User enters username "Test"
