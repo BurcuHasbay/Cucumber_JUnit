@@ -17,6 +17,6 @@ public WebTablePage(){
     public WebTablePage inputPassword;
 
 
-@FindBy(xpath = "//button[@class='btn btn-primary login__submit']")
+@FindBy(xpath = "//button[.='Login']")
     public WebTablePage logInButton;
 }
