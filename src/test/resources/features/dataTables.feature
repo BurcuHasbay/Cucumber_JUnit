@@ -13,8 +13,10 @@ Feature: Examples of Cucumber dataTables implementation
 
   #mac: command + option + L
 
+  @wip
   Scenario: User should be able to see all 12 months in months
   dropdown
+    Given User is on the dropdown page of practice tool
     Then User should see below info in month dropdown
       | January   |
       | February  |
