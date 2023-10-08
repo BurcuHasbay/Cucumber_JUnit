@@ -4,9 +4,11 @@ import com.cydeo.pages.DropDownsPage;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataTables_StepDefinitions {
@@ -36,6 +38,19 @@ public class DataTables_StepDefinitions {
         List<WebElement> actualOptionsAsAWebElement = select.getOptions();
         //Create a list of String and pass all the actual web element's options string into that
         //new list
+
+        List<String>actualOptionAsAString = new ArrayList<>();
+        for (WebElement each : actualOptionsAsAWebElement) {
+            actualOptionAsAString.add(each.getText());
+        }
+        Assert.assertEquals(expectedMonths,actualOptionAsAString);
+        //Assert will check the size of the list first. If it matches, it will check the content
+        //one by one
+
+
+
+        }
+
     }
 
 
