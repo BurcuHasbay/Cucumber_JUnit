@@ -22,7 +22,7 @@ public class BasePage {
     @FindBy(xpath = "//button[.='View all products']")
     public WebElement viewAllProducts;
 
-    @FindBy(xpath = "//button[.='View all products']")
+    @FindBy(xpath = "//button[.='Order']")
     public WebElement order;
 
 
