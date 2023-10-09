@@ -18,4 +18,12 @@ public class BasePage {
     @FindBy(xpath = "//button[.='View all orders']")
     public WebElement viewAllOrders;
 
+
+    @FindBy(xpath = "//button[.='View all products']")
+    public WebElement viewAllProducts;
+
+    @FindBy(xpath = "//button[.='View all products']")
+    public WebElement order;
+
+
 }
