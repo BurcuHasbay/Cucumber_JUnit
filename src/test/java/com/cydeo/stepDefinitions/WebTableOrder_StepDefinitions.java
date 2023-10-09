@@ -32,6 +32,8 @@ public class WebTableOrder_StepDefinitions {
     @When("User selects product type {string}")
     public void user_selects_product_type(String string) {
         Select select = new Select(orderPage.productDropDown);
+
+        select.selectByVisibleText(string);
     }
     @When("User enters quantity {string}")
     public void user_enters_quantity(String string) {
