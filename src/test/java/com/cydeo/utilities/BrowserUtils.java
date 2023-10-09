@@ -72,7 +72,12 @@ In this class, only general utility methods that are not related to some specifi
     }
 
 
-    //
+    /**
+     * This method will accept a dropdown as a WebElement
+     * and return all the options' test in a List of String
+     * @param dropDownElement
+     * @return
+     */
         public static List<String>dropDownOptionsAsString(WebElement dropDownElement){
             Select select = new Select(dropDownElement);
 
