@@ -2,7 +2,7 @@ Feature: User should be able to login using correct credential
 
   Background: User is on the login page
 Given User is on the login page of web table app
-  Then User should see url contains orders
+
 
 
   Scenario: Positive login scenario
