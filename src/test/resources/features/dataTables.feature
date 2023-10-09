@@ -1,5 +1,7 @@
 Feature: Examples of Cucumber dataTables implementation
 
+  Background: User is on the login page
+  Given User is on the dropdown page of practice tool
 
   Scenario: List of fruits I like
     Then user should see the fruits I like
@@ -13,10 +15,9 @@ Feature: Examples of Cucumber dataTables implementation
 
   #mac: command + option + L
 
-  @wip
+
   Scenario: User should be able to see all 12 months in months
   dropdown
-    Given User is on the dropdown page of practice tool
     Then User should see below info in month dropdown
       | January   |
       | February  |
@@ -31,9 +32,8 @@ Feature: Examples of Cucumber dataTables implementation
       | November  |
       | December  |
 
-
+      @wip
   Scenario: User should be able to sef all 12 months in months dropdown
-    Given User is on the dropdown page of practice tool
     When User enters below credentials
       | username | Test   |
       | password | Tester |
