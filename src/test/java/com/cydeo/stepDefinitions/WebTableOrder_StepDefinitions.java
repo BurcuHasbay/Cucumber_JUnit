@@ -1,12 +1,14 @@
 package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.BasePage;
+import com.cydeo.pages.OrderPage;
 import com.cydeo.pages.WebTableLogInPage;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.Select;
 
 public class WebTableOrder_StepDefinitions {
 
@@ -14,6 +16,8 @@ public class WebTableOrder_StepDefinitions {
     WebTableLogInPage webTableLogInPage = new WebTableLogInPage();
 
     BasePage basePage = new BasePage();
+
+    OrderPage orderPage = new OrderPage();
 
     // TO be already on the Order PaGE, we have to log in first by using Log in method
     @Given("User is already logged in and on order page")
@@ -27,7 +31,7 @@ public class WebTableOrder_StepDefinitions {
     }
     @When("User selects product type {string}")
     public void user_selects_product_type(String string) {
-
+        Select select = new Select(orderPage.productDropDown);
     }
     @When("User enters quantity {string}")
     public void user_enters_quantity(String string) {
