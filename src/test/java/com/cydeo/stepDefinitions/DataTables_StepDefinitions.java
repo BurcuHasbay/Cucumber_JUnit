@@ -34,12 +34,12 @@ public class DataTables_StepDefinitions {
     @Then("User should see below info in month dropdown")
     public void user_should_see_below_info_in_month_dropdown(List<String> expectedMonths) {
         Select select = new Select(dropDownsPage.monthDropDown);
-
+        //List of all ACTUAL months as a Web Element
         List<WebElement> actualOptionsAsAWebElement = select.getOptions();
         //Create a list of String and pass all the actual web element's options string into that
         //new list
 
-        //List of all ACTUAL months
+        //List of all ACTUAL months as a String
         List<String>actualOptionAsAString = new ArrayList<>();
 
         for (WebElement each : actualOptionsAsAWebElement) {
