@@ -1,5 +1,6 @@
 package com.cydeo.stepDefinitions;
 
+import com.cydeo.pages.BasePage;
 import com.cydeo.pages.WebTableLogInPage;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
@@ -12,6 +13,7 @@ public class WebTableOrder_StepDefinitions {
     //Without creating the object of the login() method, you CAN'T SUMMON It
     WebTableLogInPage webTableLogInPage = new WebTableLogInPage();
 
+    BasePage basePage = new BasePage();
 
     // TO be already on the Order PaGE, we have to log in first by using Log in method
     @Given("User is already logged in and on order page")
