@@ -26,4 +26,8 @@ public class BasePage {
     public WebElement order;
 
 
+    @FindBy(xpath = "//button[.='Logout']")
+    public WebElement logOutButton;
+
+
 }
