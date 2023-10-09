@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class WebTableOrderPage {
 
-    public WebTableLogInPage(){
+    public WebTableOrderPage){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
