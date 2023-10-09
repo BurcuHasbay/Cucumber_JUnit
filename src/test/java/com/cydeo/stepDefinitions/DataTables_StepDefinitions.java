@@ -40,6 +40,7 @@ public class DataTables_StepDefinitions {
         //new list
 
         List<String>actualOptionAsAString = new ArrayList<>();
+
         for (WebElement each : actualOptionsAsAWebElement) {
             actualOptionAsAString.add(each.getText());
         }
