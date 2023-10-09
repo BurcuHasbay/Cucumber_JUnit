@@ -2,7 +2,11 @@ package com.cydeo.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class BrowserUtils {
@@ -66,4 +70,29 @@ In this class, only general utility methods that are not related to some specifi
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInURL));
 
     }
+
+
+    //
+        public static List<String>dropDownOptionsAsString(WebElement dropDownElement){
+            Select select = new Select(dropDownElement);
+
+            //List of all ACTUAL months as a Web Element
+            List<WebElement> actualOptionsAsAWebElement = select.getOptions();
+
+            //Create a list of String and pass all the actual web element's options string into that
+            //new list
+
+            //List of all ACTUAL months as a String
+            List<String>actualOptionAsAString = new ArrayList<>();
+
+            for (WebElement each : actualOptionsAsAWebElement) {
+                actualOptionAsAString.add(each.getText());
+            }
+            return actualOptionAsAString;
+        }
+
+
+
+
+
 }
