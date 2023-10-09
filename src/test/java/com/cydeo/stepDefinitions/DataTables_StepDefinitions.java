@@ -5,6 +5,7 @@ import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -47,5 +48,10 @@ public class DataTables_StepDefinitions {
 
         }
 
+
+        //----------------------------------------NEW---------------------------------------------------
+    @When("User enters below credentials")
+    public void userEntersBelowCredentials() {
     }
+}
 
