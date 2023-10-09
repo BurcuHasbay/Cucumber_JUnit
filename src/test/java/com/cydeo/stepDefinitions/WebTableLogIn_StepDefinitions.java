@@ -55,7 +55,7 @@ public class WebTableLogIn_StepDefinitions {
         webTableLogInPage.logInButton.click();
 */
 
-        //New way. We already have a login() method for these kind of tasks
+        //New way. We already have a login() method for specifically this task
         webTableLogInPage.login(credentials.get("username"),credentials.get("password"));
 
     }
