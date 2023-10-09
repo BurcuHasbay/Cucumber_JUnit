@@ -18,7 +18,7 @@ Given User is on the login page of web table app
 
 
 
-  @wip
+
   Scenario: User should be able to sef all 12 months in months dropdown
     When User enters below credentials
       | username | Test   |
