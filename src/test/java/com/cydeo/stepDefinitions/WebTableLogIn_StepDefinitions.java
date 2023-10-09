@@ -48,9 +48,15 @@ public class WebTableLogIn_StepDefinitions {
 
     @When("User enters below credentials")
     public void userEntersBelowCredentials(Map<String,String> credentials) {
-
+        //Old way
+/*
         webTableLogInPage.inputUsername.sendKeys(credentials.get("username"));
         webTableLogInPage.inputPassword.sendKeys(credentials.get("password"));
+        webTableLogInPage.logInButton.click();
+*/
+
+        //New way. We already have a login() method for these kind of tasks
+        webTableLogInPage.login(credentials.get("username"),credentials.get("password"));
 
     }
 }
