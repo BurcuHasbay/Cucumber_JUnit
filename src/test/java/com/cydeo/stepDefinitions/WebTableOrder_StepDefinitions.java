@@ -1,5 +1,6 @@
 package com.cydeo.stepDefinitions;
 
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +9,7 @@ public class WebTableOrder_StepDefinitions {
 
     @Given("User is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
-
+        Driver.getDriver().get("https://web-table-2.cydeo.com/create-order");
     }
     @When("User selects product type {string}")
     public void user_selects_product_type(String string) {
