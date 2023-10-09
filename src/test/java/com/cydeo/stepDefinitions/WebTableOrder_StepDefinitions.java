@@ -18,7 +18,11 @@ public class WebTableOrder_StepDefinitions {
     // TO be already on the Order PaGE, we have to log in first by using Log in method
     @Given("User is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
-        webTableLogInPage.login();
+        String url = ConfigurationReader.getProperty("web.table.url");
+        Driver.getDriver().get(url);
+        webTableLogInPage.loginWithConfig();
+
+        basePage.order.click();
 
     }
     @When("User selects product type {string}")
