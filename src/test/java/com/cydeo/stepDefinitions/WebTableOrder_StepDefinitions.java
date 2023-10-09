@@ -12,12 +12,11 @@ public class WebTableOrder_StepDefinitions {
     //Without creating the object of the login() method, you CAN'T SUMMON It
     WebTableLogInPage webTableLogInPage = new WebTableLogInPage();
 
+
     // TO be already on the Order PaGE, we have to log in first by using Log in method
-
-
-
     @Given("User is already logged in and on order page")
     public void user_is_already_logged_in_and_on_order_page() {
+        webTableLogInPage.login();
         String orderURL = ConfigurationReader.getProperty("web.table.order.url");
     }
     @When("User selects product type {string}")
