@@ -32,9 +32,3 @@ Feature: Examples of Cucumber dataTables implementation
       | November  |
       | December  |
 
-      @wip
-  Scenario: User should be able to sef all 12 months in months dropdown
-    When User enters below credentials
-      | username | Test   |
-      | password | Tester |
-    Then User should see url contains orders

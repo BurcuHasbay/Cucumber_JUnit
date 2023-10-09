@@ -1,6 +1,7 @@
 package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.DropDownsPage;
+import com.cydeo.pages.WebTableLogInPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class DataTables_StepDefinitions {
 
@@ -50,8 +52,10 @@ public class DataTables_StepDefinitions {
 
 
         //----------------------------------------NEW---------------------------------------------------
-    @When("User enters below credentials")
-    public void userEntersBelowCredentials() {
-    }
+
+
+
+
+
 }
 
