@@ -5,6 +5,7 @@ import com.cydeo.pages.OrderPage;
 import com.cydeo.pages.WebTableLogInPage;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,10 +36,12 @@ public class WebTableOrder_StepDefinitions {
 
         select.selectByVisibleText(string);
     }
-    @When("User enters quantity {string}")
-    public void user_enters_quantity(String string) {
 
+
+    @And("User enters quantity {int}")
+    public void userEntersQuantity(int arg0) {
     }
+
     @When("User enters costumer name {string}")
     public void user_enters_costumer_name(String string) {
 
