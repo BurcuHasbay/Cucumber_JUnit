@@ -58,26 +58,32 @@ public class WebTableOrder_StepDefinitions {
     orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
     }
 
+
     @When("User enters customer name {string}")
     public void user_enters_costumer_name(String string) {
     orderPage.inputName.sendKeys(string);
     }
+
     @When("User enters street {string}")
     public void user_enters_street(String string) {
     orderPage.inputStreet.sendKeys(string);
     }
+
     @When("User enters city {string}")
     public void user_enters_city(String string) {
     orderPage.inputCity.sendKeys(string);
     }
+
     @When("User enters state {string}")
     public void user_enters_state(String string) {
     orderPage.inputState.sendKeys(string);
     }
+
     @When("User enters zipcode {string}")
     public void user_enters_zipcode(String string) {
     orderPage.inputZip.sendKeys(string);
     }
+
     @When("User selects credit card type {string}")
     public void user_selects_credit_card_type(String expectedCardTypes) {
     List<WebElement> cardTypes =orderPage.cardType;
@@ -100,14 +106,17 @@ public class WebTableOrder_StepDefinitions {
     public void user_enters_expiry_date(String string) {
 
     }
+
     @When("User enters process order button")
     public void user_enters_process_order_button() {
 
     }
+
     @Then("User should see {string} in first row of the web table")
     public void user_should_see_in_first_row_of_the_web_table(String string) {
 
     }
+
 
 
 
