@@ -55,7 +55,7 @@ public class WebTableOrder_StepDefinitions {
     orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
     }
 
-    @When("User enters costumer name {string}")
+    @When("User enters customer name {string}")
     public void user_enters_costumer_name(String string) {
     orderPage.inputName.sendKeys(string);
     }

@@ -7,7 +7,7 @@ Feature: Web table user order feature
   Given User is already logged in and on order page
   When User selects product type "Familybea"
   And User enters quantity 2
-  And User enters costumer name "Sherlock Holmes"
+  And User enters customer name "Sherlock Holmes"
   And User enters street "221B Baker Street"
   And User enters city "London"
   And User enters state "England"
