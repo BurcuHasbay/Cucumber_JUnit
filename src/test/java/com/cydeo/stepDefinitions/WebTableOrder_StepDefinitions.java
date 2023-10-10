@@ -40,7 +40,9 @@ public class WebTableOrder_StepDefinitions {
 
     @And("User enters quantity {int}")
     public void userEntersQuantity(int arg0) {
-
+    orderPage.inputQuantity.sendKeys(arg0 + "");
+    //OR
+    orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
     }
 
     @When("User enters costumer name {string}")
