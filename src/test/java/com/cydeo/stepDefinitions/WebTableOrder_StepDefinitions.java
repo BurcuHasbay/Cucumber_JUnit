@@ -9,6 +9,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
 public class WebTableOrder_StepDefinitions {
@@ -40,6 +41,15 @@ public class WebTableOrder_StepDefinitions {
 
     @And("User enters quantity {int}")
     public void userEntersQuantity(int arg0) {
+
+        //clear()method to delete what exist in the inputBox
+        //orderPage.inputQuantity.clear();
+
+        //OR
+
+        orderPage.inputQuantity.sendKeys(Keys.BACK_SPACE);
+
+
     //orderPage.inputQuantity.sendKeys(arg0 + "");
     //OR
     orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
