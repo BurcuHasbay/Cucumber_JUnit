@@ -10,7 +10,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class WebTableOrder_StepDefinitions {
 
@@ -76,7 +79,9 @@ public class WebTableOrder_StepDefinitions {
     orderPage.inputZip.sendKeys(string);
     }
     @When("User selects credit card type {string}")
-    public void user_selects_credit_card_type(String string) {orderPage.
+    public void user_selects_credit_card_type(String expectedCardTypes) {
+    List<WebElement> cardTypes =orderPage.cardType;
+
     }
     @When("User enters credit card number {string}")
     public void user_enters_credit_card_number(String string) {
