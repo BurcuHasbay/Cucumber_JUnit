@@ -57,27 +57,26 @@ public class WebTableOrder_StepDefinitions {
 
     @When("User enters costumer name {string}")
     public void user_enters_costumer_name(String string) {
-
+    orderPage.inputName.sendKeys(string);
     }
     @When("User enters street {string}")
     public void user_enters_street(String string) {
-
+    orderPage.inputStreet.sendKeys(string);
     }
     @When("User enters city {string}")
     public void user_enters_city(String string) {
-
+    orderPage.inputCity.sendKeys(string);
     }
     @When("User enters state {string}")
     public void user_enters_state(String string) {
-
+    orderPage.inputState.sendKeys(string);
     }
     @When("User enters zipcode {string}")
     public void user_enters_zipcode(String string) {
-
+    orderPage.inputZip.sendKeys(string);
     }
     @When("User selects credit card type {string}")
-    public void user_selects_credit_card_type(String string) {
-
+    public void user_selects_credit_card_type(String string) {orderPage.
     }
     @When("User enters credit card number {string}")
     public void user_enters_credit_card_number(String string) {
