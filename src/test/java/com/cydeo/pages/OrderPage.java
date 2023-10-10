@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class OrderPage {
 
     public OrderPage(){
@@ -36,5 +38,9 @@ public class OrderPage {
 
     @FindBy(name = "zip")
     public WebElement inputZip;
+
+    //To use all cards if needed
+    @FindBy(name = "card")
+    public List<WebElement> cardType;
 
 }
