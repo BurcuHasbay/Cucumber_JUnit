@@ -82,6 +82,15 @@ public class WebTableOrder_StepDefinitions {
     public void user_selects_credit_card_type(String expectedCardTypes) {
     List<WebElement> cardTypes =orderPage.cardType;
 
+        for (WebElement each : cardTypes) {
+            if (each.getAttribute("value").equals(expectedCardTypes)){
+                each.click();
+            }
+
+        }
+
+
+
     }
     @When("User enters credit card number {string}")
     public void user_enters_credit_card_number(String string) {
