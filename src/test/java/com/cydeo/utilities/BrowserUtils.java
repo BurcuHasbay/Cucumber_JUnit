@@ -96,8 +96,18 @@ In this class, only general utility methods that are not related to some specifi
             return actualOptionAsAString;
         }
 
+        //I have to create List of WebElement, because I want to make it independent,
+
+        public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
 
 
+            for (WebElement each : radioButtons) {
+                if (each.getAttribute("value").equalsIgnoreCase(attributeValue)){
+                    each.click();
+                }
+
+            }
+        }
 
 
 }
