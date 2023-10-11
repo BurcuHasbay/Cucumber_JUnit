@@ -98,6 +98,15 @@ In this class, only general utility methods that are not related to some specifi
 
         //I have to create List of WebElement, because I want to make it independent,
 
+
+    /**
+     * This method will accept a group of radioButtons as a list of WebElement.
+     * It will look through the List, and click to the radio button with provided attributeValue
+     * @param radioButtons
+     * @param attributeValue
+     */
+
+
         public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
 
 
