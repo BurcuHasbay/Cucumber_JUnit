@@ -59,7 +59,7 @@ In this class, only general utility methods that are not related to some specifi
                 return;
             }
         }
-
+    Driver.getDriver().switchTo().window(origin);
     }
 
 
