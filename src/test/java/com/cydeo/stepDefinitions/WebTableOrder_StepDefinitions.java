@@ -89,7 +89,7 @@ public class WebTableOrder_StepDefinitions {
     List<WebElement> cardTypes =orderPage.cardType;
 
         for (WebElement each : cardTypes) {
-            if (each.getAttribute("value").equals(expectedCardTypes)){
+            if (each.getAttribute("value").equalsIgnoreCase(expectedCardTypes)){
                 each.click();
             }
 
