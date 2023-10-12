@@ -2,6 +2,7 @@ package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.BasePage;
 import com.cydeo.pages.OrderPage;
+import com.cydeo.pages.ViewOfOrdersPage;
 import com.cydeo.pages.WebTableLogInPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
@@ -17,6 +18,8 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class WebTableOrder_StepDefinitions {
+
+    ViewOfOrdersPage viewOfOrdersPage = new ViewOfOrdersPage();
 
     //Without creating the object of the login() method, you CAN'T SUMMON It
     WebTableLogInPage webTableLogInPage = new WebTableLogInPage();
@@ -114,6 +117,8 @@ public class WebTableOrder_StepDefinitions {
 
     @Then("User should see {string} in first row of the web table")
     public void user_should_see_in_first_row_of_the_web_table(String string) {
+
+
 
     }
 
