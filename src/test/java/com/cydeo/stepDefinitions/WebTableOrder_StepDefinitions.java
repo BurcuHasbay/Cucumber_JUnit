@@ -25,8 +25,7 @@ public class WebTableOrder_StepDefinitions {
 
     OrderPage orderPage = new OrderPage();
 
-    @FindBy(xpath = "//input[@name='cardNo']")
-    public FluentWebElement inputCard;
+
 
     // TO be already on the Order PaGE, we have to log in first by using Log in method
     @Given("User is already logged in and on order page")
@@ -98,19 +97,19 @@ public class WebTableOrder_StepDefinitions {
 
     @When("User enters credit card number {string}")
     public void user_enters_credit_card_number(String string) {
-
+    orderPage.inputCardNo.sendKeys(string);
 
 
     }
     @When("User enters expiry date {string}")
     public void user_enters_expiry_date(String string) {
-
+    orderPage.inputCardExp.sendKeys(string);
 
     }
 
     @When("User enters process order button")
     public void user_enters_process_order_button() {
-
+    orderPage.processOrderButton.click();
     }
 
     @Then("User should see {string} in first row of the web table")
