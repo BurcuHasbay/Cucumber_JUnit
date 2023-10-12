@@ -116,9 +116,11 @@ public class WebTableOrder_StepDefinitions {
     }
 
     @Then("User should see {string} in first row of the web table")
-    public void user_should_see_in_first_row_of_the_web_table(String string) {
+    public void user_should_see_in_first_row_of_the_web_table(String expectedName) {
 
+        String actualName = viewOfOrdersPage.firstCellFirsRow.getText();
 
+        System.out.println("viewOfOrdersPage.firstCellFirsRow.getText() = " + viewOfOrdersPage.firstCellFirsRow.getText());
 
     }
 
