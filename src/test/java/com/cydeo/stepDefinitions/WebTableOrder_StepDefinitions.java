@@ -11,6 +11,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -121,6 +122,8 @@ public class WebTableOrder_StepDefinitions {
         String actualName = viewOfOrdersPage.firstCellFirsRow.getText();
 
         System.out.println("viewOfOrdersPage.firstCellFirsRow.getText() = " + viewOfOrdersPage.firstCellFirsRow.getText());
+
+        Assert.assertEquals(expectedName,actualName);
 
     }
 
