@@ -20,7 +20,6 @@ Feature: Web table user order feature
 
   @wip
   Scenario Template: User should be able to place order and see in the web table
-
     Given User is already logged in and on order page
     When User selects product type "<productType>"
     And User enters quantity <quantity>
