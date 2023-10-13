@@ -18,7 +18,7 @@ Feature: Web table user order feature
     Then User should see "Sherlock Holmes" in first row of the web table
 
 
-
+@wip
   Scenario Template: User should be able to place order and see in the web table
     Given User is already logged in and on order page
     When User selects product type "<productType>"
@@ -33,6 +33,8 @@ Feature: Web table user order feature
     And User enters expiry date "<expiryDate>"
     And User enters process order button
     Then User should see "<expectedName>" in first row of the web table
+
+    @femaleScientist
     Examples:Famous female scientist
       | productType | quantity | customerName         | street           | city           | state   | zipCode | cardType         | cardNumber      | expiryDate | expectedName         |
       | Screenable  | 2        | Abigail Salyers      | Chester st.      | West Yorkshire | England | BD11EE  | American Express | 293130009111750 | 12/36      | Abigail Salyers      |
@@ -42,7 +44,8 @@ Feature: Web table user order feature
       | MoneyCog    | 5        | Margaret McFall-Ngai | West Coast st.   | Manchester     | England | M1AW    | American Express | 358130009666128 | 12/36      | Margaret McFall-Ngai |
       | Familybea   | 2        | Rosalind Franklin    | Bakery st.       | London         | England | E17DS   | American Express | 774010009648996 | 12/36      | Rosalind Franklin    |
 
-@wip
+
+    @maleScientist
     Examples:Famous male scientist
       | productType | quantity | customerName              | street           | city           | state   | zipCode | cardType         | cardNumber      | expiryDate | expectedName         |
       | Screenable  | 2        | Alfred Nobel              | Chester st.      | West Yorkshire | England | BD11EE  | American Express | 293130009111750 | 12/36      | Abigail Salyers      |
