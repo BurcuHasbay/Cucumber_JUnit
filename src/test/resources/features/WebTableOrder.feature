@@ -35,10 +35,10 @@ Feature: Web table user order feature
     And User enters process order button
     Then User should see "<expectedName>" in first row of the web table
     Examples:Famous female scientist
-      | productType | quantity | customerName         | street           | city       | state   | zipCode | cardType         | cardNumber      | expiryDate | expectedName         |
-      | Screenable  | 2        | Abigail Salyers      | Chester st.      | Yorkshire  | England | BN11BN  | American Express | 293130009111750 | 12/36      | Abigail Salyers      |
-      | MoneyCog    | 3        | Rita Colwell         | Canterburry st.  | Brighton   | England | BN11BN  | American Express | 111033709648550 | 12/36      | Rita Colwell         |
-      | Screenable  | 4        | Jennifer Doudna      | Priston Park st. | Oxford     | England | BN11BN  | American Express | 520630009648113 | 12/36      | Jennifer Doudna      |
-      | MoneyCog    | 3        | Jo Handelsman        | Victoria st.     | Brighton   | England | BN11BN  | American Express | 359994209648710 | 12/36      | Jo Handelsman        |
-      | MoneyCog    | 5        | Margaret McFall-Ngai | West Coast st.   | Manchester | England | BN11BN  | American Express | 358130009666128 | 12/36      | Margaret McFall-Ngai |
-      | Familybae   | 2        | Rosalind Franklin    | Bakery st.       | London     | England | BN11BN  | American Express | 774010009648996 | 12/36      | Rosalind Franklin    |
+      | productType | quantity | customerName         | street           | city           | state   | zipCode | cardType         | cardNumber      | expiryDate | expectedName         |
+      | Screenable  | 2        | Abigail Salyers      | Chester st.      | West Yorkshire | England | BD11EE  | American Express | 293130009111750 | 12/36      | Abigail Salyers      |
+      | MoneyCog    | 3        | Rita Colwell         | Canterburry st.  | Brighton       | England | BN11AB  | American Express | 111033709648550 | 12/36      | Rita Colwell         |
+      | Screenable  | 4        | Jennifer Doudna      | Priston Park st. | Oxford         | England | OX1BT   | American Express | 520630009648113 | 12/36      | Jennifer Doudna      |
+      | MoneyCog    | 3        | Jo Handelsman        | Victoria st.     | Brighton       | England | BN11BN  | American Express | 359994209648710 | 12/36      | Jo Handelsman        |
+      | MoneyCog    | 5        | Margaret McFall-Ngai | West Coast st.   | Manchester     | England | M1AW    | American Express | 358130009666128 | 12/36      | Margaret McFall-Ngai |
+      | Familybae   | 2        | Rosalind Franklin    | Bakery st.       | London         | England | E17DS   | American Express | 774010009648996 | 12/36      | Rosalind Franklin    |
