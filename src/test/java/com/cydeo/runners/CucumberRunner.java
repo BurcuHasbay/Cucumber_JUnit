@@ -8,11 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-report.html",
-                "rerun:target/rerun.tzt"},
+                "rerun:target/rerun.tzt", "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+        },
+
         features = "/Users/burcuhasbay/IdeaProjects/Cucumber_JUnit/src/test/resources/features",
         glue = "com/cydeo/stepDefinitions",
         dryRun = false,
-        tags = "@maleScientist"
+        tags = "@Regression"
 )
 public class CucumberRunner {
 }
