@@ -12,7 +12,7 @@ public class Driver {
 
   //  private static WebDriver driver;
 
-    private static InheritableThreadLocal<WebDriver driverPool = new InheritableThreadLocal<>();
+    private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 
     public static WebDriver getDriver(){
 
@@ -44,7 +44,7 @@ public class Driver {
 
 
 
-    // If my driver session ID is NOT NULL, I want to make it Null- this completely terminates
+    // If my driver session ID is NOT NULL, I want to make it Null-this completely terminates
     //It makes its value always null after using quit() method.
     public static void closeDriver(){
         if (driverPool.get() != null){
