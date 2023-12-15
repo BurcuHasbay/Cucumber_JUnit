@@ -18,7 +18,7 @@ Feature: Web table user order feature
     Then User should see "Sherlock Holmes" in first row of the web table
 
 
-  @wip
+
   Scenario Template: User should be able to place order and see in the web table
     Given User is already logged in and on order page
     When User selects product type "<productType>"
