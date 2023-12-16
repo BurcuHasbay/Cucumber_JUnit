@@ -22,7 +22,7 @@ public class Amazon_StepDefinitions {
     }
     @When("User hovers the mouse over the clickable log-in box")
     public void user_hovers_the_mouse_over_the_clickable_log_in_box() {
-    actions.moveToElement(amazonPage.logInContainerBox).pause(Duration.ofSeconds(4)).perform();
+    actions.moveToElement(amazonPage.logInContainerBox).perform();
     }
     @When("User sees the {string} message")
     public void user_sees_the_message(String string) {
