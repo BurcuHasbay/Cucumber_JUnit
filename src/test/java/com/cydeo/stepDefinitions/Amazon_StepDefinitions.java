@@ -5,9 +5,10 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import java.time.Duration;
 
 public class Amazon_StepDefinitions {
 
@@ -26,12 +27,14 @@ public class Amazon_StepDefinitions {
     }
     @When("User sees the {string} message")
     public void user_sees_the_message(String string) {
-        Assert.assertEquals(amazonPage.areYouNew.getText(),string);
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
 
     }
-    @When("User clicks the {string} link button")
-    public void user_click_the_link_button(String string) {
-    amazonPage.BeANewMemberLink.click();
+    @When("User clicks the sign-up link button")
+    public void user_click_the_link_button() {
+        WebElement beANewMemberLink= Driver.getDriver().findElement(By.linkText("Üye Olun."));
+        actions.moveToElement(beANewMemberLink).pause(4000).perform();
+
     }
 
 
