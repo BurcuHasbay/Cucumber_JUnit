@@ -2,8 +2,12 @@ package com.cydeo.stepDefinitions;
 
 import com.cydeo.pages.AmazonPage;
 import com.cydeo.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
+
+import java.time.Duration;
 
 public class Amazon_StepDefinitions {
 
@@ -18,17 +22,21 @@ public class Amazon_StepDefinitions {
     }
     @When("User hovers the mouse over the clickable log-in box")
     public void user_hovers_the_mouse_over_the_clickable_log_in_box() {
-
+    actions.moveToElement(amazonPage.logInContainerBox).pause(Duration.ofSeconds(4)).perform();
     }
     @When("User sees the {string} message")
     public void user_sees_the_message(String string) {
+        Assert.assertEquals(amazonPage.areYouNew.getText(),string);
 
     }
-    @When("User click the {string} link button")
+    @When("User clicks the {string} link button")
     public void user_click_the_link_button(String string) {
-
+    amazonPage.BeANewMemberLink.click();
     }
 
-    
 
+    @And("User rejects all the cookies")
+    public void userRejectsAllTheCookies() {
+        amazonPage.rejectAllCookies.click();
+    }
 }
