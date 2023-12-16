@@ -13,8 +13,16 @@ public class AmazonPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//div[@class='nav-line-1-container']")
+    @FindBy(id = "sp-cc-rejectall-container")
+    public WebElement rejectAllCookies;
+
+    @FindBy(id = "nav-link-accountList-nav-line-1")
     public WebElement logInContainerBox;
+
+    @FindBy(id = "av-flyout-ya-newCust")
+    public WebElement areYouNew;
+
+
 
 
 
