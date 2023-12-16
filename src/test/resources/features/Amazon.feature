@@ -6,4 +6,4 @@ Feature: Amazon sign-up functionality and verification
     And User rejects all the cookies
     And User hovers the mouse over the clickable log-in box
     And User sees the "Yeni müşteri misiniz?" message
-    And User clicks the "Üye olun." link button
+    And User clicks the sign-up link button
