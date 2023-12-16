@@ -22,7 +22,7 @@ public class AmazonPage {
     @FindBy(id = "nav-flyout-ya-newCust")
     public WebElement areYouNew;
 
-    @FindBy(linkText = "Üye olun.")
+    @FindBy(xpath = "//*[@id=\"nav-flyout-ya-newCust\"]/a")
     public WebElement BeANewMemberLink;
 
 
