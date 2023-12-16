@@ -19,8 +19,11 @@ public class AmazonPage {
     @FindBy(id = "nav-link-accountList-nav-line-1")
     public WebElement logInContainerBox;
 
-    @FindBy(id = "av-flyout-ya-newCust")
+    @FindBy(id = "nav-flyout-ya-newCust")
     public WebElement areYouNew;
+
+    @FindBy(linkText = "Üye olun.")
+    public WebElement BeANewMemberLink;
 
 
 
