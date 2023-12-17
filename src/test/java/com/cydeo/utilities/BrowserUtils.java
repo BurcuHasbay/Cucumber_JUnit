@@ -13,14 +13,16 @@ public class BrowserUtils {
     /*
 In this class, only general utility methods that are not related to some specific page
  */
+    /*
     public static void sleep(int second){
-        second*=2000;
+        //second*=2000;
         try{
             Thread.sleep(second);
         }catch (InterruptedException e){
 
         }
     }
+*/
 
 
 
