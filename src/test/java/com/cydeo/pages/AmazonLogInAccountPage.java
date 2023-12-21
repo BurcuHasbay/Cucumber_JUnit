@@ -37,6 +37,26 @@ public class AmazonLogInAccountPage {
     @FindBy(xpath = "//*[@id='twotabsearchtextbox']")
     public WebElement searchBox;
 
+    @FindBy(xpath = "//input[@id='nav-search-submit-button']")
+    public WebElement searchBoxClickButton;
+
+    @FindBy(xpath = "//a[@class='s-pagination-item s-pagination-next s-pagination-button s-pagination-separator']")
+    public WebElement nextButton;
+
+    @FindBy(linkText = "WINMAU Michael Van Gerwen MvG Gift Sets - 50 Piece Darts Set with 4 Sets of Shafts, 4 Sets of Flights Plus Accessories")
+    public WebElement winmauDarkTungstenOk;
+
+
+    @FindBy(xpath = "//div[@id='magnifierLens']")
+    public WebElement toZoom;
+
+    @FindBy(xpath = "//div[@id='titleSection']")
+    public WebElement productTitle;
+
+    @FindBy(xpath = "//span[@class='a-price a-text-price a-size-medium apexPriceToPay']")
+    public WebElement priceOfTheProduct;
+
+
 
 
 
