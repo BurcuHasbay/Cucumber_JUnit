@@ -19,8 +19,9 @@ Feature: Log-in and account functionality
     And User scrolls up till the search box
     And User deletes the the previous typed one and types "Winmau dart oku" in the search box and clicks
     When User scrolls down till the dart he or she selects then clicks on it
-    Then User sees the title of the product and the price
-    Then User clicks on the picture to zoom in
+    Then User sees the title of the product
+    Then User clicks on the picture to zoom in and clicks to zoom out
+    And User clicks the next picture till the last one
 
 
 
